@@ -1,5 +1,5 @@
 # BashBuddy
-<img align="center" height="300px" src="https://user-images.githubusercontent.com/62404655/222531384-74d1bf07-11c7-4cab-a796-bac550f82105.jpg" alt="BashBuddy" />
+<img align="right" height="300px" src="https://user-images.githubusercontent.com/62404655/222531384-74d1bf07-11c7-4cab-a796-bac550f82105.jpg" alt="BashBuddy" />
 
 ## Description
 
