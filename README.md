@@ -11,7 +11,7 @@
 
 ## Features
 
-- [ ] Login/SignUp
+- [x] Login/SignUp
 - [ ] Create Events (Create public or private event, public events can be seen by friends, link to join public/private event)
 - [ ] Friend System ( Friends list, add friends to events)
 - [ ] Budget System (Option to create budget for event, charts with budget, budget has categories and categories has products)
