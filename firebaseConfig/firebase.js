@@ -1,7 +1,6 @@
-import * as firebase from 'firebase';
-import "firebase/compat/auth";
-import "firebase/compat/firestore";
-
+import { firebase } from '@firebase/app'
+import '@firebase/auth'
+import '@firebase/firestore'
 
 //Firebase keys
 const firebaseConfig = {
@@ -13,8 +12,8 @@ const firebaseConfig = {
   appId: "1:524293015540:web:b0401beb99ddccef15dba1",
   measurementId: "G-BGR2SMJ68Z"
 };
-const app = firebase.initializeApp(firebaseConfig);
-const db = app.firestore();
-const auth = firebase.auth();
+export const app = firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore()
+const auth = firebase.auth()
 
 export { db, auth }

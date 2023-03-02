@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, TextInput, TouchableOpacity } from 'react-nativ
 import { Avatar } from 'react-native-elements';
 import { AntDesign } from '@expo/vector-icons';
 import {styles} from './Styles';
+import { auth } from '../../firebaseConfig/firebase'
 
 const Register = () => {
   const [firstName, setFirstName] = useState('');
@@ -11,21 +12,21 @@ const Register = () => {
   const [password, setPassword] = useState('');
   const [photoUrl, setPhotoUrl] = useState('');
 
-  const handleSignUp = () => {
-    // Implement sign up functionality here
-  };
+    const handleSignUp = () =>{
+        auth.createUserWithEmailAndPassword(email,password)
+            .then(authUser=>{
+                authUser.user.updateProfile({
+                    displayName:name,
+                    photoURL:imageUrl || 'https://picsum.photos/200/300.webp'
+                })
+            })
+            .catch((error)=>alert(error.message));
+    }
 
   return (
     <View style={styles.container}>
       <View style={styles.avatarContainer}>
-        <Avatar
-          rounded
-          source={{ uri: photoUrl }}
-          size={100}
-          containerStyle={styles.avatar}
-          showEditButton
-          onEditPress={() => console.log('Edit Photo')}
-        />
+
       </View>
       <View style={styles.formContainer}>
         <TextInput
