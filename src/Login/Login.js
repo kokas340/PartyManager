@@ -2,7 +2,9 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 import { Button } from '@ant-design/react-native';
-import {styles} from './Styles'
+import {styles} from './Styles';
+
+
 export default function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
