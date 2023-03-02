@@ -5,7 +5,7 @@
 
 - The main idea of this project is to make planning events/partys/gatherings easier
 - You will be able to create events, organize them, invite whoever you want, set budgets and track it, and much more
-- Still in development
+- In development
 
 ## Features
 
