@@ -26,3 +26,8 @@
 - React Native
 - Firebase
 - React.js (Later)
+
+## Authors
+
+- [@FuLLeNN](https://github.com/FuLLeNN)
+- [@kokas340](https://github.com/kokas340)
