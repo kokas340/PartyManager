@@ -13,14 +13,14 @@ const Register = () => {
   const [photoUrl, setPhotoUrl] = useState('');
 
     const handleSignUp = () =>{
-        auth.createUserWithEmailAndPassword(email,password)
-            .then(authUser=>{
+        //firebase signup
+        auth.createUserWithEmailAndPassword(email,password).then(authUser=>{
+                //after successful register
                 authUser.user.updateProfile({
                     displayName:name,
                     photoURL:imageUrl || 'https://picsum.photos/200/300.webp'
                 })
-            })
-            .catch((error)=>alert(error.message));
+            }).catch((error)=>alert(error.message));
     }
 
   return (

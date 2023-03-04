@@ -11,9 +11,9 @@ function MyStack() {
     <Stack.Navigator
     screenOptions={{
       headerShown: false
-    }}
-    >
+    }}>
       <Stack.Screen name="Register" component={Register} />
+      <Stack.Screen name="Login" component={Login} />
     </Stack.Navigator>
   );
 }
