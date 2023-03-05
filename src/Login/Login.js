@@ -5,7 +5,7 @@ import {styles} from './Styles';
 import { auth } from '../../firebaseConfig/firebase'
 
 
-export default function Login() {
+export default function Login({navigation}) {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -14,7 +14,7 @@ export default function Login() {
         const unsubscribe = auth.onAuthStateChanged((authUser)=>{
             if(authUser){
                 //send to home if logged in
-                //navigation.replace("screen");
+                navigation.replace("Home");
             }
         })
         return unsubscribe;
