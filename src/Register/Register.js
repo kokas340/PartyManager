@@ -5,7 +5,8 @@ import { AntDesign } from '@expo/vector-icons';
 import {styles} from './Styles';
 import { auth } from '../../firebaseConfig/firebase'
 
-const Register = () => {
+
+export const Register = ({navigation}) => {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
@@ -14,12 +15,15 @@ const Register = () => {
 
     const handleSignUp = () =>{
         //firebase signup
-        auth.createUserWithEmailAndPassword(email,password).then(authUser=>{
+        auth.createUserWithEmailAndPassword(email,password)
+            .then(authUser=>{
                 //after successful register
                 authUser.user.updateProfile({
                     displayName:name,
                     photoURL:imageUrl || 'https://picsum.photos/200/300.webp'
                 })
+                navigation.navigate("Home");
+
             }).catch((error)=>alert(error.message));
     }
 
@@ -61,6 +65,3 @@ const Register = () => {
     </View>
   );
 };
-
-
-export default Register
