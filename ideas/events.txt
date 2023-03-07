@@ -1,0 +1,7 @@
+Events main page:
+    - Show events he is assigned to
+    - Show events he can join (public, friends, friends of friends)
+Guest Restrictions Add default option (restricted)
+Location can be selected on a map
+Add date to createEvent.js
+*Maybe add photo to the event*
