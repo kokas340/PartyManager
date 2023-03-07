@@ -3,5 +3,5 @@ Events main page:
     - Show events he can join (public, friends, friends of friends)
 Guest Restrictions Add default option (restricted)
 Location can be selected on a map
-Add date to createEvent.js
+Add date to createEvent.js (startDate and endDate)
 *Maybe add photo to the event*

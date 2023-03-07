@@ -19,7 +19,8 @@ export default function CreateEvent() {
             restriction : guestRestrictions,
             location : location,
             image : "location.png",
-            date : "11/11/2003"
+            sDate : "11/11/2003",
+            eDate : "11/11/2003"
         }).then(()=>{
             console.log("created successfully")
         }).catch((error)=>alert(error));
