@@ -1,4 +1,3 @@
-import React from 'react'
 import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import { styles } from './Styles';
@@ -22,9 +21,6 @@ export default function Home() {
                     <Text style={styles.heading2}>Archived</Text>
                 </TouchableOpacity>
 
-                <View>
-
-                </View>
             </View>
             <View style={styles.body}>
                 <View style={styles.subHeader}>

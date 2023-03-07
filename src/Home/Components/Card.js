@@ -8,7 +8,7 @@ export default function Card() {
             <Image
                 style={styles.bannerCard}
                 source={require('../../../assets/party.jpg')}
-            />
+            /> 
             <View style={styles.infoCard}>
                 <View style={styles.creatorCard}>
                     <View style={styles.authorView}>

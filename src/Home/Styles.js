@@ -10,8 +10,6 @@ const styles = StyleSheet.create({
     //justifyContent: 'center',
   },
   
- 
-  
   header: {
     backgroundColor: '#A555EC',
     flexDirection: 'row',
@@ -39,7 +37,7 @@ const styles = StyleSheet.create({
   },
   heading: {
     paddingHorizontal: 5,
-    fontSize: 24,
+    fontSize: 28,
     fontWeight: 'bold',
     marginBottom: 20,
     color: '#fff',
@@ -47,14 +45,14 @@ const styles = StyleSheet.create({
   heading2: {
     paddingHorizontal: 5,
     marginLeft: 20,
-    fontSize: 24,
+    fontSize: 28,
     fontWeight: 'bold',
     marginBottom: 20,
     color: 'rgba(225,225,225, 0.4)',
   },
   heading3: {
   
-    fontSize: 18,
+    fontSize: 22,
     fontWeight: 'bold',
     marginBottom: 10,
     color: '#fff',
@@ -62,9 +60,9 @@ const styles = StyleSheet.create({
   heading4: {
     position:'absolute',
     right:20,
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: 'bold',
-    marginBottom: 10,
+    marginBottom: 8,
     color: '#FFD700',
   },
   seeAllTouch:{
