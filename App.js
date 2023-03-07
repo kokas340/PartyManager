@@ -8,6 +8,9 @@ import Login from './src/Login/Login';
 import Register from './src/Register/Register';
 import Home from './src/Home/Home'
 import CreateEvent from './src/CreateEvent/CreateEvent'
+//import Map from './src/Map/Map'
+//import Profile from './src/Profile/Profile'
+//import MyEvents from './src/MyEvents/MyEvents'
 
 
 const Stack = createStackNavigator();
@@ -46,9 +49,9 @@ function MyTabs() {
           ),
         }}
       />
-      <Tab.Screen name="MyParties" component={Home}
+      <Tab.Screen name="MyEvents" component={Home}
         options={{
-          tabBarLabel: 'My parties',
+          tabBarLabel: 'My Events',
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="account-multiple" color={color} size={26} />
           ),
