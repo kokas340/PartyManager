@@ -29,5 +29,5 @@
 
 ## Authors
 
-- [@kkristiansd](https://github.com/kkristiansd)
+- [@FuLLeNN](https://github.com/FuLLeNN)
 - [@kokas340](https://github.com/kokas340)
