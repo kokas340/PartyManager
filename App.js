@@ -70,6 +70,7 @@ function MyTabs() {
 function MyStack() {
   return (
     <Stack.Navigator
+    initialRouteName='Login'
       screenOptions={{
         headerShown: false
       }}>

@@ -4,6 +4,10 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+
+  },
+  imagebg:{
+    flex:1,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -17,9 +21,10 @@ const styles = StyleSheet.create({
     height: 50,
     borderWidth: 1,
     borderColor: 'gray',
-    borderRadius: 5,
+    borderRadius: 8,
     paddingLeft: 10,
     marginBottom: 20,
+    backgroundColor:'#fff',
   },
   button: {
     width: '80%',
