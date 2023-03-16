@@ -12,7 +12,7 @@
 ## Features
 
 - [x] Login/SignUp
-- [ ] Create Events (Create public or private event, public events can be seen by friends, link to join public/private event)
+- [x] Create Events (Create public or private event, public events can be seen by friends, link to join public/private event)
 - [ ] Friend System ( Friends list, add friends to events)
 - [ ] Budget System (Option to create budget for event, charts with budget, budget has categories and categories has products)
 - [ ] Role System (Events will have a Owner mandatory, possibility to have Co-Owner and create custom roles with custom permissions)
