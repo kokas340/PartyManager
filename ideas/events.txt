@@ -5,3 +5,9 @@ Guest Restrictions Add default option (restricted)
 Location can be selected on a map
 Add date to createEvent.js (startDate and endDate)
 *Maybe add photo to the event*
+
+
+* Edit *
+** CreateEvent.js **
+Add image input ( to be uploaded to firebase storage and save the image url in firestore)
+Add two datapickers

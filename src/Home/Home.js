@@ -1,9 +1,34 @@
 import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import React, { useState, useEffect } from 'react';
 import { ScrollView } from 'react-native-gesture-handler';
 import { styles } from './Styles';
 import Card from './Components/Card'
+import { auth, db } from '../../firebaseConfig/firebase'
 
 export default function Home() {
+    const [loading, setLoading] = useState(true); //loading
+    const [events, setEvents] = useState([]);
+
+    useEffect(() => {
+        //Get all events
+        const subscriber = db.collection('events').onSnapshot(querySnapshot => {
+                const events = [];
+
+                querySnapshot.forEach(documentSnapshot => {
+                    events.push({
+                        ...documentSnapshot.data(),
+                        key: documentSnapshot.id,
+                    });
+                });
+
+                setEvents(events);
+                setLoading(false);
+            });
+
+        console.log(events)
+        return () => subscriber();
+    }, []);
+
     const onEvents = () => {
         console.log('Button onEvents!');
     };

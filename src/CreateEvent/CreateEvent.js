@@ -11,6 +11,7 @@ export default function CreateEvent() {
     const [guestRestrictions, setGuestRestrictions] = useState('Friends Only');
     const [location, setLocation] = useState('');
 
+    //Create event with information provided (collection events)
     const handleSubmit = async () => {
         await db.collection('events').add({
             title :  title,
@@ -29,10 +30,7 @@ export default function CreateEvent() {
     return (
         <View style={styles.container}>
             <View style={styles.header}>
-
                 <Text style={styles.heading}>Events</Text>
-
-
             </View>
             <TextInput
                 style={styles.input}
