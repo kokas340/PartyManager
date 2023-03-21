@@ -3,7 +3,7 @@ import {View, TextInput, Switch, Text, Button} from 'react-native';
 import {Picker} from '@react-native-picker/picker';
 import {styles} from './Styles';
 import { auth, db } from '../../firebaseConfig/firebase'
-
+import DateTimePicker from '@react-native-community/datetimepicker';
 export default function CreateEvent() {
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
