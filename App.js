@@ -9,7 +9,7 @@ import Register from './src/Register/Register';
 import Home from './src/Home/Home'
 import CreateEvent from './src/CreateEvent/CreateEvent'
 //import Map from './src/Map/Map'
-//import Profile from './src/Profile/Profile'
+import Profile from './src/Profile/Profile'
 //import MyEvents from './src/MyEvents/MyEvents'
 
 
@@ -57,7 +57,7 @@ function MyTabs() {
           ),
         }}
       />
-      <Tab.Screen name="Profile" component={Home} options={{
+      <Tab.Screen name="Profile" component={Profile} options={{
         tabBarLabel: 'Profile',
         tabBarIcon: ({ color }) => (
           <MaterialCommunityIcons name="face-man" color={color} size={26} />
